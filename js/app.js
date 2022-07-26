@@ -48,7 +48,7 @@ user_id = document.querySelector("#user_id");
 function renderUsers(usersArray) {
   // TODO: usersArray არის სერვერიდან დაბრუნებული ობიექტების მასივი
   // TODO: ამ მონაცმების მიხედვით html ში ჩასვით ცხრილი როგორც "ცხრილი.png" შია
-
+  console.log(usersArray);
   buildTable(usersArray);
   userActions(); // ყოველ რენდერზე ახლიდან უნდა მივაბათ ივენთ ლისნერები
 }
@@ -82,8 +82,8 @@ function buildTable(data) {
   }
 }
 
-const editUser = document.querySelector("#edit");
-const deleteUsers = document.querySelector("#delete");
+// const editUser = document.querySelector("#edit");
+// const deleteUsers = document.querySelector("#delete");
 
 // TODO: დაასრულე
 function userActions() {
